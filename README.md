@@ -1,6 +1,6 @@
 # 李敖视角 Skill
 
-一个基于公开著作、档案、访谈、演讲、电视节目及外部批评交叉调研生成的 Codex 人物 Skill。
+一个基于公开著作、档案、访谈、演讲、电视节目及外部批评交叉调研生成的人物 Skill，可以装到 Claude、Claude Code、Codex 等 AI Agent 里使用。
 
 它提炼的是李敖如何读书、研究、写作、演讲、做节目和处理关系，不是简单模仿粗口、狂气或金句。
 
@@ -15,7 +15,18 @@
 - 亲情、友情、爱情及合作冲突的处理框架
 - 12 份带来源分层的研究稿
 
-## 安装到 Codex
+## 安装
+
+### Claude Code
+
+```
+/plugin marketplace add shi930508/li-ao-perspective-skill
+/plugin install li-ao-perspective@li-ao-perspective-skill
+```
+
+也可以手动安装：把 `li-ao-perspective` 文件夹复制到 `~/.claude/skills/` 下。
+
+### Codex
 
 使用 Codex 自带的 Skill 安装器：
 
@@ -23,7 +34,20 @@
 python "$HOME\.codex\skills\.system\skill-installer\scripts\install-skill-from-github.py" --repo shi930508/li-ao-perspective-skill --path li-ao-perspective
 ```
 
-私有仓库需要本机已有 GitHub 凭据。安装后在下一轮对话中即可使用。
+### Cursor 等其他 AI Agent
+
+```
+npx skills add shi930508/li-ao-perspective-skill
+```
+
+按提示选择要装到哪个 Agent。如果你的 Agent 不在支持列表里，把 `li-ao-perspective` 文件夹复制到它读取 Skill 的目录即可。
+
+### Claude 网页版 / App
+
+1. 下载安装包：[dist/li-ao-perspective.zip](https://github.com/shi930508/li-ao-perspective-skill/raw/main/dist/li-ao-perspective.zip)
+2. 在 Claude 的技能设置里上传这个文件，不用解压
+
+安装后在下一轮对话中即可使用。
 
 ## 触发示例
 

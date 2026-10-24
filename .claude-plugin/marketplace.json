@@ -1,0 +1,21 @@
+{
+  "name": "li-ao-perspective-skill",
+  "owner": {
+    "name": "shi930508"
+  },
+  "metadata": {
+    "description": "李敖视角 Skill",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "li-ao-perspective",
+      "description": "李敖的思维框架、研究方法与表达方式：7 个心智模型、9 条决策启发式，覆盖读书、考据写作、演讲节目和关系处理",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./li-ao-perspective"
+      ]
+    }
+  ]
+}
